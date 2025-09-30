@@ -178,7 +178,11 @@ const Index = () => {
     <div className="py-12 px-4 animate-fade-in">
       <div className="max-w-2xl mx-auto text-center">
         <div className="bg-gradient-to-br from-secondary via-accent to-primary rounded-3xl p-12 shadow-xl">
-          <Icon name="Send" className="mx-auto mb-6 text-primary" size={64} />
+          <img 
+            src="https://cdn.poehali.dev/files/67ddb66d-4fb2-42d4-976f-2df6aab13f97.png" 
+            alt="kittybeadsy logo"
+            className="w-48 h-48 mx-auto mb-6 rounded-2xl object-cover shadow-lg"
+          />
           <h2 className="text-4xl font-bold mb-6">Присоединяйтесь к нашему Telegram!</h2>
           <p className="text-xl mb-8 text-muted-foreground">
             Следите за новинками, получайте эксклюзивные предложения и задавайте вопросы напрямую
