@@ -226,6 +226,81 @@ const Index = () => {
           </div>
         </div>
       </section>
+
+      <section className="py-16 px-4 bg-muted/30">
+        <div className="max-w-6xl mx-auto">
+          <h2 className="text-4xl font-bold text-center mb-12">О мастере</h2>
+          
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div className="space-y-6">
+              <div className="prose prose-lg">
+                <p className="text-lg leading-relaxed">
+                  Привет! Меня зовут <span className="font-semibold text-primary">Настя</span> ✨
+                </p>
+                <p className="text-lg leading-relaxed">
+                  В марте 2024 года я сделала своё первое украшение. Что начиналось с простых брелочков, 
+                  превратилось в настоящее творческое путешествие — от первых шагов с недорогой фурнитурой 
+                  до создания изящных и качественных украшений, которые приносят радость.
+                </p>
+                <p className="text-lg leading-relaxed">
+                  Сегодня в моей мастерской рождаются самые разные украшения: воздушные брелки, 
+                  нежные браслеты, изящные серьги, элегантные ожерелья и даже стильные цепочки для очков. 
+                  Каждое изделие создаётся вручную с особым вниманием к деталям.
+                </p>
+                <p className="text-lg leading-relaxed">
+                  Меня невероятно вдохновляет, что я нашла свою чудесную аудиторию — людей, которые ценят 
+                  ручную работу и уникальность. Я с радостью продолжаю создавать новые украшения специально для вас! 
+                  💝
+                </p>
+                <p className="text-lg leading-relaxed font-medium">
+                  Следите за новыми работами и обновлениями в моём Telegram-канале:
+                </p>
+              </div>
+              
+              <Button
+                size="lg"
+                className="rounded-full w-full sm:w-auto"
+                onClick={() => window.open('https://t.me/kittybeadsy', '_blank')}
+              >
+                <Icon name="Send" className="mr-2" />
+                Telegram-канал
+              </Button>
+            </div>
+
+            <div className="relative">
+              <div className="grid grid-cols-2 gap-4">
+                <div className="space-y-4">
+                  <img
+                    src="https://cdn.poehali.dev/files/2766e8f6-d629-4b7e-b483-087d0ddfabca.png"
+                    alt="Настя"
+                    className="rounded-2xl shadow-lg w-full object-cover aspect-[3/4]"
+                  />
+                  <img
+                    src="https://cdn.poehali.dev/files/aefdc640-3432-4580-8baf-db13a43c17b6.png"
+                    alt="Украшения"
+                    className="rounded-2xl shadow-lg w-full object-cover aspect-square"
+                  />
+                </div>
+                <div className="space-y-4 pt-8">
+                  <img
+                    src="https://cdn.poehali.dev/files/074cea31-d5ae-433a-a65c-db2f75665111.png"
+                    alt="Работы"
+                    className="rounded-2xl shadow-lg w-full object-cover aspect-square"
+                  />
+                  <img
+                    src="https://cdn.poehali.dev/files/b17d7238-bf66-407d-8636-d01a70c5cc43.png"
+                    alt="Брелки"
+                    className="rounded-2xl shadow-lg w-full object-cover aspect-[4/3]"
+                  />
+                </div>
+              </div>
+              
+              <div className="absolute -top-4 -right-4 text-6xl animate-bounce">✨</div>
+              <div className="absolute -bottom-4 -left-4 text-5xl animate-pulse">💝</div>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
   );
 
