@@ -176,25 +176,45 @@ const Index = () => {
 
   const renderTelegram = () => (
     <div className="py-12 px-4 animate-fade-in">
-      <div className="max-w-2xl mx-auto text-center">
+      <div className="max-w-3xl mx-auto">
         <div className="bg-gradient-to-br from-secondary via-accent to-primary rounded-3xl p-12 shadow-xl">
-          <img 
-            src="https://cdn.poehali.dev/files/67ddb66d-4fb2-42d4-976f-2df6aab13f97.png" 
-            alt="kittybeadsy logo"
-            className="w-48 h-48 mx-auto mb-6 rounded-2xl object-cover shadow-lg"
-          />
-          <h2 className="text-4xl font-bold mb-6">Присоединяйтесь к нашему Telegram!</h2>
-          <p className="text-xl mb-8 text-muted-foreground">
-            Следите за новинками, получайте эксклюзивные предложения и задавайте вопросы напрямую
-          </p>
-          <Button
-            size="lg"
-            className="text-lg px-8 py-6 rounded-full shadow-lg"
-            onClick={() => window.open('https://t.me/kittybeadsy', '_blank')}
-          >
-            <Icon name="Send" className="mr-2" />
-            Перейти в Telegram
-          </Button>
+          <div className="flex flex-col md:flex-row items-center justify-center gap-8 mb-8">
+            <img 
+              src="https://cdn.poehali.dev/files/67ddb66d-4fb2-42d4-976f-2df6aab13f97.png" 
+              alt="kittybeadsy logo"
+              className="w-32 h-32 rounded-full object-cover shadow-xl border-4 border-white/30"
+            />
+            <div className="text-center md:text-left">
+              <h2 className="text-4xl font-bold mb-4">Присоединяйтесь к нашему Telegram!</h2>
+              <p className="text-xl text-muted-foreground">
+                Следите за новинками, получайте эксклюзивные предложения и задавайте вопросы напрямую
+              </p>
+            </div>
+          </div>
+          <div className="text-center">
+            <Button
+              size="lg"
+              className="text-lg px-8 py-6 rounded-full shadow-lg mb-6"
+              onClick={() => window.open('https://t.me/kittybeadsy', '_blank')}
+            >
+              <Icon name="Send" className="mr-2" />
+              Перейти в Telegram
+            </Button>
+            <div className="text-base text-muted-foreground mt-6 pt-6 border-t border-white/20">
+              <p className="mb-2">По всем вопросам и предложениям пишите:</p>
+              <p className="font-semibold">
+                лс в телеграм:{' '}
+                <a 
+                  href="https://t.me/Nast_461174" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-primary hover:underline"
+                >
+                  @Nast_461174
+                </a>
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
