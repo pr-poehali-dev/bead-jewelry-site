@@ -43,12 +43,11 @@ const Index = () => {
         id: 2, 
         name: 'Брелочек "Серебряное сияние"', 
         price: '550 ₽', 
-        image: 'https://cdn.poehali.dev/files/dd1dca9f-ecab-46eb-a102-8248e6d281b6.png',
+        image: 'https://cdn.poehali.dev/files/51613fd2-4062-4089-9169-2a8f6398a79b.png',
         images: [
-          'https://cdn.poehali.dev/files/dd1dca9f-ecab-46eb-a102-8248e6d281b6.png',
-          'https://cdn.poehali.dev/files/4d97c3e7-d196-417e-b2b4-4f22fccd9944.png',
+          'https://cdn.poehali.dev/files/51613fd2-4062-4089-9169-2a8f6398a79b.png',
           'https://cdn.poehali.dev/files/1ff7b144-e15d-4f53-9ca9-81a64f9745ca.png',
-          'https://cdn.poehali.dev/files/51613fd2-4062-4089-9169-2a8f6398a79b.png'
+          'https://cdn.poehali.dev/files/dd1dca9f-ecab-46eb-a102-8248e6d281b6.png'
         ],
         description: 'Элегантный брелочек в серебристо-белых тонах с нежными элементами. Изящная цепочка украшена бантиком, бусинами и подвесками в виде сердечка и цветочка. Лёгкий и воздушный, отлично дополнит любую сумочку или связку ключей.',
         materials: ['Стеклянные бусины', 'Акриловые элементы', 'Металлическая цепочка', 'Серебристая фурнитура', 'Вощеная нить']
@@ -222,7 +221,7 @@ const Index = () => {
                   <img
                     src={product.image}
                     alt={product.name}
-                    className={`w-full h-64 object-cover ${product.id === 2 ? 'object-bottom' : ''}`}
+                    className="w-full h-64 object-cover"
                   />
                 </CardContent>
                 <CardFooter className="flex flex-col items-center gap-3 p-6">
