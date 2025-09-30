@@ -288,8 +288,8 @@ const Index = () => {
                     className="rounded-2xl shadow-lg w-full object-cover aspect-square"
                   />
                   <img
-                    src="https://cdn.poehali.dev/files/b17d7238-bf66-407d-8636-d01a70c5cc43.png"
-                    alt="Брелки"
+                    src="https://cdn.poehali.dev/files/88c3a838-4f45-4b88-ac86-15ea9fa0423d.png"
+                    alt="Процесс создания"
                     className="rounded-2xl shadow-lg w-full object-cover aspect-[4/3]"
                   />
                 </div>
