@@ -15,6 +15,7 @@ interface Product {
   image: string;
   images: string[];
   description: string;
+  materials: string[];
 }
 
 const Index = () => {
@@ -31,7 +32,8 @@ const Index = () => {
         price: '450 ₽', 
         image: '/img/396c6b97-ea55-4484-9ac0-14992d5aa000.jpg',
         images: ['/img/396c6b97-ea55-4484-9ac0-14992d5aa000.jpg', '/img/52ca3181-4b5e-4a60-9377-47cc192a6b7e.jpg'],
-        description: 'Милый брелочек ручной работы из нежно-розовых и лавандовых бусин. Идеально подойдет для ключей или сумочки.'
+        description: 'Милый брелочек ручной работы из нежно-розовых и лавандовых бусин. Идеально подойдет для ключей или сумочки.',
+        materials: ['Чешский бисер', 'Жемчужные бусины', 'Металлическая фурнитура', 'Вощеная нить']
       },
       { 
         id: 2, 
@@ -39,7 +41,8 @@ const Index = () => {
         price: '450 ₽', 
         image: '/img/396c6b97-ea55-4484-9ac0-14992d5aa000.jpg',
         images: ['/img/396c6b97-ea55-4484-9ac0-14992d5aa000.jpg', '/img/b44e157a-3f69-4642-9d25-b38e0f1279d7.jpg'],
-        description: 'Очаровательный брелочек в лавандовых тонах. Каждая бусинка подобрана вручную.'
+        description: 'Очаровательный брелочек в лавандовых тонах. Каждая бусинка подобрана вручную.',
+        materials: ['Стеклянные бусины', 'Акриловые элементы', 'Карабин металлический', 'Прочная нить']
       },
       { 
         id: 3, 
@@ -47,7 +50,8 @@ const Index = () => {
         price: '500 ₽', 
         image: '/img/396c6b97-ea55-4484-9ac0-14992d5aa000.jpg',
         images: ['/img/396c6b97-ea55-4484-9ac0-14992d5aa000.jpg', '/img/52ca3181-4b5e-4a60-9377-47cc192a6b7e.jpg'],
-        description: 'Изящный брелочек с акцентом на сиреневых оттенках. Ручная работа с любовью.'
+        description: 'Изящный брелочек с акцентом на сиреневых оттенках. Ручная работа с любовью.',
+        materials: ['Чешский бисер премиум', 'Кристаллы Сваровски', 'Позолоченная фурнитура', 'Японская нить']
       },
     ],
     bracelets: [
@@ -57,7 +61,8 @@ const Index = () => {
         price: '850 ₽', 
         image: '/img/b44e157a-3f69-4642-9d25-b38e0f1279d7.jpg',
         images: ['/img/b44e157a-3f69-4642-9d25-b38e0f1279d7.jpg', '/img/396c6b97-ea55-4484-9ac0-14992d5aa000.jpg'],
-        description: 'Нежный браслет из розовых и лавандовых бусин. Регулируемый размер, подходит для любого запястья.'
+        description: 'Нежный браслет из розовых и лавандовых бусин. Регулируемый размер, подходит для любого запястья.',
+        materials: ['Натуральный жемчуг', 'Розовый кварц', 'Эластичная нить', 'Серебряные разделители']
       },
       { 
         id: 5, 
@@ -65,7 +70,8 @@ const Index = () => {
         price: '900 ₽', 
         image: '/img/b44e157a-3f69-4642-9d25-b38e0f1279d7.jpg',
         images: ['/img/b44e157a-3f69-4642-9d25-b38e0f1279d7.jpg', '/img/52ca3181-4b5e-4a60-9377-47cc192a6b7e.jpg'],
-        description: 'Воздушный браслет с переливающимися бусинами. Создан для особенных моментов.'
+        description: 'Воздушный браслет с переливающимися бусинами. Создан для особенных моментов.',
+        materials: ['Стеклянные бусины', 'Чешский бисер', 'Эластичная основа', 'Металлические акценты']
       },
       { 
         id: 6, 
@@ -73,7 +79,8 @@ const Index = () => {
         price: '800 ₽', 
         image: '/img/b44e157a-3f69-4642-9d25-b38e0f1279d7.jpg',
         images: ['/img/b44e157a-3f69-4642-9d25-b38e0f1279d7.jpg', '/img/396c6b97-ea55-4484-9ac0-14992d5aa000.jpg'],
-        description: 'Легкий и нежный браслет, словно облако на вашем запястье. Комфортный и стильный.'
+        description: 'Легкий и нежный браслет, словно облако на вашем запястье. Комфортный и стильный.',
+        materials: ['Акриловые бусины', 'Жемчужный бисер', 'Эластичная нить', 'Хлопковая основа']
       },
     ],
     earrings: [
@@ -83,7 +90,8 @@ const Index = () => {
         price: '650 ₽', 
         image: '/img/52ca3181-4b5e-4a60-9377-47cc192a6b7e.jpg',
         images: ['/img/52ca3181-4b5e-4a60-9377-47cc192a6b7e.jpg', '/img/b44e157a-3f69-4642-9d25-b38e0f1279d7.jpg'],
-        description: 'Изящные серьги из бусин пастельных оттенков. Гипоаллергенная фурнитура.'
+        description: 'Изящные серьги из бусин пастельных оттенков. Гипоаллергенная фурнитура.',
+        materials: ['Хирургическая сталь', 'Стеклянные бусины', 'Позолоченные элементы', 'Ювелирная проволока']
       },
       { 
         id: 8, 
@@ -91,7 +99,8 @@ const Index = () => {
         price: '700 ₽', 
         image: '/img/52ca3181-4b5e-4a60-9377-47cc192a6b7e.jpg',
         images: ['/img/52ca3181-4b5e-4a60-9377-47cc192a6b7e.jpg', '/img/396c6b97-ea55-4484-9ac0-14992d5aa000.jpg'],
-        description: 'Весенние серьги с нежными бусинами. Добавят свежести любому образу.'
+        description: 'Весенние серьги с нежными бусинами. Добавят свежести любому образу.',
+        materials: ['Медицинская сталь', 'Чешские бусины', 'Серебряное покрытие', 'Декоративные подвески']
       },
       { 
         id: 9, 
@@ -99,7 +108,8 @@ const Index = () => {
         price: '750 ₽', 
         image: '/img/52ca3181-4b5e-4a60-9377-47cc192a6b7e.jpg',
         images: ['/img/52ca3181-4b5e-4a60-9377-47cc192a6b7e.jpg', '/img/b44e157a-3f69-4642-9d25-b38e0f1279d7.jpg'],
-        description: 'Романтичные серьги с цветочным мотивом. Легкие и комфортные для повседневной носки.'
+        description: 'Романтичные серьги с цветочным мотивом. Легкие и комфортные для повседневной носки.',
+        materials: ['Титановые швензы', 'Жемчужные бусины', 'Кристаллы', 'Позолоченная фурнитура']
       },
     ],
     necklaces: [
@@ -109,7 +119,8 @@ const Index = () => {
         price: '1200 ₽', 
         image: '/img/b44e157a-3f69-4642-9d25-b38e0f1279d7.jpg',
         images: ['/img/b44e157a-3f69-4642-9d25-b38e0f1279d7.jpg', '/img/52ca3181-4b5e-4a60-9377-47cc192a6b7e.jpg'],
-        description: 'Элегантное колье ручной работы. Станет украшением вечернего образа.'
+        description: 'Элегантное колье ручной работы. Станет украшением вечернего образа.',
+        materials: ['Натуральный жемчуг', 'Чешский бисер люкс', 'Вощеная нить', 'Серебряный замок']
       },
       { 
         id: 11, 
@@ -117,7 +128,8 @@ const Index = () => {
         price: '1350 ₽', 
         image: '/img/b44e157a-3f69-4642-9d25-b38e0f1279d7.jpg',
         images: ['/img/b44e157a-3f69-4642-9d25-b38e0f1279d7.jpg', '/img/396c6b97-ea55-4484-9ac0-14992d5aa000.jpg'],
-        description: 'Изысканное колье с градиентом пастельных оттенков. Регулируемая длина.'
+        description: 'Изысканное колье с градиентом пастельных оттенков. Регулируемая длина.',
+        materials: ['Речной жемчуг', 'Розовый кварц', 'Японская нить', 'Позолоченная застежка']
       },
     ],
   };
@@ -380,96 +392,133 @@ const Index = () => {
         </div>
       </nav>
 
-      <main>{renderContent()}</main>
+      {selectedProduct ? (
+        <div className="fixed inset-0 z-50 bg-background overflow-y-auto">
+          <div className="min-h-screen">
+            <div className="sticky top-0 z-10 bg-background/95 backdrop-blur-sm border-b">
+              <div className="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
+                <Button
+                  variant="ghost"
+                  size="icon"
+                  onClick={() => setSelectedProduct(null)}
+                  className="rounded-full"
+                >
+                  <Icon name="ArrowLeft" size={24} />
+                </Button>
+                <h1 className="text-xl font-semibold">{selectedProduct.name}</h1>
+                <div className="w-10" />
+              </div>
+            </div>
 
-      <Dialog open={!!selectedProduct} onOpenChange={() => setSelectedProduct(null)}>
-        <DialogContent className="max-w-2xl max-h-[90vh] overflow-y-auto">
-          {selectedProduct && (
-            <>
-              <DialogHeader>
-                <DialogTitle className="text-2xl font-bold">{selectedProduct.name}</DialogTitle>
-              </DialogHeader>
-              <div className="space-y-6">
-                <div className="relative">
-                  <img
-                    src={selectedProduct.images[currentImageIndex]}
-                    alt={selectedProduct.name}
-                    className="w-full h-96 object-cover rounded-lg"
-                  />
+            <div className="max-w-7xl mx-auto px-4 py-8">
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                <div className="space-y-4">
+                  <div className="relative aspect-square rounded-2xl overflow-hidden bg-muted">
+                    <img
+                      src={selectedProduct.images[currentImageIndex]}
+                      alt={selectedProduct.name}
+                      className="w-full h-full object-cover"
+                    />
+                    {selectedProduct.images.length > 1 && (
+                      <div className="absolute inset-0 flex items-center justify-between px-4">
+                        <Button
+                          variant="secondary"
+                          size="icon"
+                          className="rounded-full shadow-lg"
+                          onClick={() => {
+                            setCurrentImageIndex((prev) => 
+                              prev === 0 ? selectedProduct.images.length - 1 : prev - 1
+                            );
+                          }}
+                        >
+                          <Icon name="ChevronLeft" size={24} />
+                        </Button>
+                        <Button
+                          variant="secondary"
+                          size="icon"
+                          className="rounded-full shadow-lg"
+                          onClick={() => {
+                            setCurrentImageIndex((prev) => 
+                              prev === selectedProduct.images.length - 1 ? 0 : prev + 1
+                            );
+                          }}
+                        >
+                          <Icon name="ChevronRight" size={24} />
+                        </Button>
+                      </div>
+                    )}
+                  </div>
+                  
                   {selectedProduct.images.length > 1 && (
-                    <div className="absolute inset-0 flex items-center justify-between px-4">
-                      <Button
-                        variant="secondary"
-                        size="icon"
-                        className="rounded-full shadow-lg"
-                        onClick={(e) => {
-                          e.stopPropagation();
-                          setCurrentImageIndex((prev) => 
-                            prev === 0 ? selectedProduct.images.length - 1 : prev - 1
-                          );
-                        }}
-                      >
-                        <Icon name="ChevronLeft" size={24} />
-                      </Button>
-                      <Button
-                        variant="secondary"
-                        size="icon"
-                        className="rounded-full shadow-lg"
-                        onClick={(e) => {
-                          e.stopPropagation();
-                          setCurrentImageIndex((prev) => 
-                            prev === selectedProduct.images.length - 1 ? 0 : prev + 1
-                          );
-                        }}
-                      >
-                        <Icon name="ChevronRight" size={24} />
-                      </Button>
+                    <div className="grid grid-cols-4 gap-3">
+                      {selectedProduct.images.map((img, index) => (
+                        <button
+                          key={index}
+                          onClick={() => setCurrentImageIndex(index)}
+                          className={`aspect-square rounded-lg overflow-hidden transition-all ${
+                            currentImageIndex === index 
+                              ? 'ring-2 ring-primary scale-95' 
+                              : 'opacity-60 hover:opacity-100'
+                          }`}
+                        >
+                          <img src={img} alt="" className="w-full h-full object-cover" />
+                        </button>
+                      ))}
                     </div>
                   )}
                 </div>
-                
-                {selectedProduct.images.length > 1 && (
-                  <div className="flex gap-2 justify-center">
-                    {selectedProduct.images.map((_, index) => (
-                      <button
-                        key={index}
-                        onClick={() => setCurrentImageIndex(index)}
-                        className={`w-3 h-3 rounded-full transition-all ${
-                          currentImageIndex === index 
-                            ? 'bg-primary scale-125' 
-                            : 'bg-muted-foreground/30'
-                        }`}
-                      />
-                    ))}
-                  </div>
-                )}
 
-                <div className="space-y-4">
-                  <div className="flex items-center justify-between">
-                    <p className="text-3xl font-bold text-primary">{selectedProduct.price}</p>
+                <div className="space-y-8">
+                  <div>
+                    <h2 className="text-4xl font-bold mb-4" style={{ fontFamily: "'Cormorant', serif" }}>
+                      {selectedProduct.name}
+                    </h2>
+                    <p className="text-4xl font-bold text-primary">{selectedProduct.price}</p>
                   </div>
-                  <p className="text-muted-foreground leading-relaxed text-lg">
-                    {selectedProduct.description}
-                  </p>
-                  <div className="pt-4 border-t">
-                    <p className="text-sm text-muted-foreground mb-3">
-                      Для заказа напишите в Telegram:
+
+                  <div className="space-y-4">
+                    <h3 className="text-xl font-semibold">Описание</h3>
+                    <p className="text-muted-foreground leading-relaxed text-lg">
+                      {selectedProduct.description}
                     </p>
-                    <Button
-                      className="w-full rounded-full"
-                      size="lg"
-                      onClick={() => window.open('https://t.me/Nast_461174', '_blank')}
-                    >
-                      <Icon name="Send" className="mr-2" />
-                      Написать в Telegram
-                    </Button>
+                  </div>
+
+                  <div className="space-y-4 pt-6 border-t">
+                    <h3 className="text-xl font-semibold">Материалы</h3>
+                    <ul className="space-y-2">
+                      {selectedProduct.materials.map((material, index) => (
+                        <li key={index} className="flex items-start gap-3">
+                          <Icon name="Sparkles" size={20} className="text-primary mt-0.5 flex-shrink-0" />
+                          <span className="text-muted-foreground">{material}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+
+                  <div className="space-y-4 pt-6 border-t">
+                    <div className="bg-muted/50 rounded-2xl p-6 space-y-3">
+                      <p className="text-sm text-muted-foreground">
+                        Все украшения создаются вручную с любовью и вниманием к деталям. 
+                        Для заказа напишите в Telegram:
+                      </p>
+                      <Button
+                        className="w-full rounded-full"
+                        size="lg"
+                        onClick={() => window.open('https://t.me/Nast_461174', '_blank')}
+                      >
+                        <Icon name="Send" className="mr-2" />
+                        Написать в Telegram
+                      </Button>
+                    </div>
                   </div>
                 </div>
               </div>
-            </>
-          )}
-        </DialogContent>
-      </Dialog>
+            </div>
+          </div>
+        </div>
+      ) : (
+        <main>{renderContent()}</main>
+      )}
 
       <footer className="bg-muted py-12 mt-20">
         <div className="max-w-6xl mx-auto px-4 text-center">
