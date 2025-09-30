@@ -289,11 +289,8 @@ const Index = () => {
 
       <footer className="bg-muted py-12 mt-20">
         <div className="max-w-6xl mx-auto px-4 text-center">
-          <p className="text-muted-foreground text-lg mb-4">
+          <p className="text-muted-foreground text-lg">
             Украшения ручной работы с любовью ✨
-          </p>
-          <p className="text-sm text-muted-foreground">
-            © 2024 kittybeadsy. Все права защищены.
           </p>
         </div>
       </footer>
