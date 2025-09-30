@@ -196,7 +196,10 @@ const Index = () => {
 
       <section className="py-16 px-4">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-4xl font-bold text-center mb-12">Избранные работы</h2>
+          <h2 className="text-4xl font-bold text-center mb-4">Избранные работы</h2>
+          <p className="text-center text-muted-foreground text-lg mb-12 max-w-2xl mx-auto">
+            Здесь собраны мои самые необычные и оригинальные украшения, созданные по индивидуальным заказам
+          </p>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {products.keychains.slice(0, 3).map((product) => (
               <Card 
