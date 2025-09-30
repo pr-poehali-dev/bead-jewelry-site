@@ -43,9 +43,9 @@ const Index = () => {
         id: 2, 
         name: 'Брелочек "Серебряное сияние"', 
         price: '550 ₽', 
-        image: 'https://cdn.poehali.dev/files/51613fd2-4062-4089-9169-2a8f6398a79b.png',
+        image: 'https://cdn.poehali.dev/files/318569af-a628-41f7-a93c-acbbbb794798.png',
         images: [
-          'https://cdn.poehali.dev/files/51613fd2-4062-4089-9169-2a8f6398a79b.png',
+          'https://cdn.poehali.dev/files/318569af-a628-41f7-a93c-acbbbb794798.png',
           'https://cdn.poehali.dev/files/1ff7b144-e15d-4f53-9ca9-81a64f9745ca.png',
           'https://cdn.poehali.dev/files/dd1dca9f-ecab-46eb-a102-8248e6d281b6.png'
         ],
