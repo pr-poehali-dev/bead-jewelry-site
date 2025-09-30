@@ -217,9 +217,10 @@ const Index = () => {
           <div className="flex items-center justify-between h-20">
             <button
               onClick={() => setActiveSection('home')}
-              className="text-2xl font-bold text-primary"
+              className="text-3xl font-bold text-primary tracking-wide"
+              style={{ fontFamily: "'Cormorant', serif" }}
             >
-              Бусинка
+              kittybeadsy
             </button>
             <div className="hidden md:flex gap-2">
               <Button
@@ -267,7 +268,7 @@ const Index = () => {
             Украшения ручной работы с любовью ✨
           </p>
           <p className="text-sm text-muted-foreground">
-            © 2024 Бусинка. Все права защищены.
+            © 2024 kittybeadsy. Все права защищены.
           </p>
         </div>
       </footer>
