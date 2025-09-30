@@ -221,7 +221,7 @@ const Index = () => {
                   <img
                     src={product.image}
                     alt={product.name}
-                    className="w-full h-64 object-cover"
+                    className={`w-full h-64 object-cover ${product.id === 2 ? 'object-[center_30%]' : ''}`}
                   />
                 </CardContent>
                 <CardFooter className="flex flex-col items-center gap-3 p-6">
