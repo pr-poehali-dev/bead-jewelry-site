@@ -186,6 +186,7 @@ const Index = () => {
           <Button
             size="lg"
             className="text-lg px-8 py-6 rounded-full shadow-lg"
+            onClick={() => window.open('https://t.me/kittybeadsy', '_blank')}
           >
             <Icon name="Send" className="mr-2" />
             Перейти в Telegram
