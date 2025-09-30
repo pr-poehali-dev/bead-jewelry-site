@@ -54,7 +54,7 @@ const Index = () => {
       },
       { 
         id: 3, 
-        name: 'Брелочек "Розовая рыбка"', 
+        name: 'Брелочек "Рыбка"', 
         price: '480 ₽', 
         image: 'https://cdn.poehali.dev/files/dd31c288-3742-4d70-8ef9-01aa31550b83.png',
         images: [
@@ -221,7 +221,7 @@ const Index = () => {
                   <img
                     src={product.image}
                     alt={product.name}
-                    className="w-full h-64 object-cover"
+                    className={`w-full h-64 object-cover ${product.id === 2 ? 'object-top' : ''}`}
                   />
                 </CardContent>
                 <CardFooter className="flex flex-col items-center gap-3 p-6">
