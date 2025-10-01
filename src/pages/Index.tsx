@@ -6,7 +6,7 @@ import { Dialog, DialogContent, DialogHeader, DialogTitle } from '@/components/u
 import Icon from '@/components/ui/icon';
 
 type Section = 'home' | 'catalog' | 'faq' | 'telegram';
-type Category = 'keychains' | 'bracelets' | 'earrings' | 'necklaces';
+type Category = 'keychains' | 'bracelets' | 'earrings' | 'necklaces' | 'other';
 
 interface Product {
   id: number;
@@ -80,8 +80,8 @@ const Index = () => {
         price: '200 ₽', 
         image: 'https://cdn.poehali.dev/files/f1b6d2e6-ff20-4143-8c42-b407433101a9.png',
         images: ['https://cdn.poehali.dev/files/f1b6d2e6-ff20-4143-8c42-b407433101a9.png'],
-        description: 'Воздушный брелочек с розовыми и жемчужными бусинами, металлическими подвесками: цветочек, звёздочки, крылышко и сердечко. Нежный аксессуар для сумочки или ключей.',
-        materials: ['Розовые бусины', 'Жемчужные бусины', 'Металлические подвески (цветок, звёзды, крылышко, сердечко)', 'Карабин']
+        description: 'Воздушный брелочек с розовыми и жемчужными бусинами, металлическими подвесками: цветочек, звёздочки, крылышко и сердечко. Нежный аксессуар на шнуре для телефона или сумочки.',
+        materials: ['Розовые бусины', 'Жемчужные бусины', 'Металлические подвески (цветок, звёзды, крылышко, сердечко)', 'Шнур для телефона']
       },
       { 
         id: 13, 
@@ -145,6 +145,15 @@ const Index = () => {
         description: 'Тематический браслет по мотивам Joost Klein — Europapa! В дизайне использованы синие и голубые бусины, буквы с именем артиста, металлические подвески: звёзды, ракушка, спираль. Базовая длина 17 см с регулируемой цепочкой для идеальной посадки на любое запястье. Идеален для фанатов!',
         materials: ['Синие стеклянные бусины', 'Голубые акриловые бусины', 'Буквы-подвески', 'Металлические звёзды и ракушка', 'Цепочка-удлинитель', 'Застёжка-карабин']
       },
+      { 
+        id: 15, 
+        name: 'Браслет и серьги "Рубиновое сияние"', 
+        price: '275 ₽', 
+        image: 'https://cdn.poehali.dev/files/6d0cb795-4b5d-4e0a-812c-000239c645c4.png',
+        images: ['https://cdn.poehali.dev/files/6d0cb795-4b5d-4e0a-812c-000239c645c4.png'],
+        description: 'Изысканный набор: браслет с жемчужными и красными бусинами, металлическими подвесками в виде сердечка и звёздочек, дополненный серьгами-подвесками. Базовая длина браслета 17 см с регулируемой цепочкой.',
+        materials: ['Жемчужные бусины', 'Красные гранёные бусины', 'Прозрачные бусины', 'Металлические подвески (сердечко, звёздочки)', 'Цепочка-удлинитель', 'Швензы из медицинской стали']
+      },
     ],
     earrings: [
       { 
@@ -204,6 +213,30 @@ const Index = () => {
         materials: ['Тонкая металлическая цепочка', 'Акриловые бусины жемчужного цвета', 'Звёздочки', 'Металлический бант', 'Миниатюрные жемчужинки']
       },
     ],
+    other: [
+      { 
+        id: 16, 
+        name: 'Брелок "G-DRAGON" (индивидуальный заказ)', 
+        price: '240 ₽', 
+        image: 'https://cdn.poehali.dev/files/aa33798b-21c8-41e3-9014-c3d68aed906e.png',
+        images: ['https://cdn.poehali.dev/files/aa33798b-21c8-41e3-9014-c3d68aed906e.png'],
+        description: 'Эксклюзивный брелок, созданный по индивидуальному заказу — максимально близкая копия любимого брелка заказчика. Выполнен с буквами "G-DRAGON", прозрачными гранёными бусинами, жемчужинами и акриловым цветочком. Идеальный вариант для повторения вашего особенного украшения!',
+        materials: ['Буквы-подвески', 'Прозрачные гранёные бусины', 'Жемчужные бусины', 'Акриловый цветочек', 'Шнур для телефона или сумки']
+      },
+      { 
+        id: 17, 
+        name: 'Дополнение к брелку "Цветущая сакура"', 
+        price: '175 ₽', 
+        image: 'https://cdn.poehali.dev/files/a1dfe354-248d-417c-9407-d4f9e66e7a88.png',
+        images: [
+          'https://cdn.poehali.dev/files/a1dfe354-248d-417c-9407-d4f9e66e7a88.png',
+          'https://cdn.poehali.dev/files/9b5bb333-fe88-4b7d-8631-17e1458cd3a8.png',
+          'https://cdn.poehali.dev/files/de7f819a-2883-4b53-887d-8898cbc2f1b3.png'
+        ],
+        description: 'Украшение-дополнение к вашему акриловому брелку (брелок не входит в стоимость). Цветочная подвеска с цепочкой из розовых, зелёных и прозрачных бусин, металлической спиралью и цветочными элементами. Два варианта носки: подвеска сверху или снизу. Принесите свой брелок — и я дополню его уникальным декором!',
+        materials: ['Акриловые цветочки', 'Розовые бусины', 'Зелёные листочки', 'Прозрачные бусины', 'Металлическая спираль', 'Цепочка', 'Карабин-сакура']
+      },
+    ],
   };
 
   const categories = [
@@ -211,6 +244,7 @@ const Index = () => {
     { id: 'bracelets', name: 'Браслеты', icon: 'Circle' },
     { id: 'earrings', name: 'Серьги', icon: 'Gem' },
     { id: 'necklaces', name: 'Ожерелья', icon: 'Heart' },
+    { id: 'other', name: 'Разное', icon: 'Star' },
   ];
 
   const faqItems = [
@@ -279,11 +313,16 @@ const Index = () => {
                 }}
               >
                 <CardContent className="p-0">
-                  <img
-                    src={product.image}
-                    alt={product.name}
-                    className={`w-full h-64 object-cover ${product.id === 2 ? 'object-[center_15%]' : ''}`}
-                  />
+                  <div className="relative w-full h-64">
+                    <img
+                      src={product.image}
+                      alt={product.name}
+                      className={`w-full h-full object-cover ${product.id === 2 ? 'object-[center_15%]' : ''}`}
+                    />
+                    {product.id === 5 && (
+                      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-purple-100/30 to-purple-200/50 pointer-events-none" />
+                    )}
+                  </div>
                 </CardContent>
                 <CardFooter className="flex flex-col items-center gap-3 p-6">
                   <h3 className="text-xl font-semibold">{product.name}</h3>
