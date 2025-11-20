@@ -413,7 +413,7 @@ const Index = () => {
       { 
         id: 33, 
         name: 'Цепочка для очков "Небесная звезда"', 
-        price: '300 ₽',
+        price: '370 ₽',
         originalPrice: '430 ₽', 
         image: 'https://cdn.poehali.dev/files/15224d4b-8718-43c1-96a4-11f12d5ee0aa.jpg',
         images: [
@@ -648,7 +648,7 @@ const Index = () => {
           ))}
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-8">
           {products[activeCategory].map((product) => (
             <Card 
               key={product.id} 
