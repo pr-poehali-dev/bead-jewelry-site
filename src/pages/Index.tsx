@@ -774,6 +774,15 @@ const Index = () => {
             >
               kittybeadsy
             </button>
+            <Button
+              variant={activeSection === 'faq' ? 'default' : 'ghost'}
+              onClick={() => setActiveSection('faq')}
+              className="rounded-full md:hidden"
+              size="sm"
+            >
+              <Icon name="HelpCircle" className="mr-1" size={16} />
+              FAQ
+            </Button>
             <div className="hidden md:flex gap-2">
               <Button
                 variant={activeSection === 'home' ? 'default' : 'ghost'}
