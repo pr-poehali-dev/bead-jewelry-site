@@ -175,7 +175,7 @@ const Index = () => {
       },
       { 
         id: 25, 
-        name: 'Брелок "Рождественская сказка", 
+        name: 'Брелок "Рождественская сказка"', 
         price: '200 ₽', 
         image: 'https://cdn.poehali.dev/files/8ec5c4b9-b79c-4d76-a677-6e454d9967dc.png',
         images: ['https://cdn.poehali.dev/files/8ec5c4b9-b79c-4d76-a677-6e454d9967dc.png'],
