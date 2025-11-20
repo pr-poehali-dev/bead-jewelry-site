@@ -665,13 +665,13 @@ const Index = () => {
                   className={`w-full h-64 object-cover ${product.id === 10 ? 'object-[center_70%]' : ''}`}
                 />
               </CardContent>
-              <CardFooter className="flex flex-col items-center gap-3 p-6">
-                <h3 className="text-xl font-semibold">{product.name}</h3>
-                <div className="flex items-center gap-3">
+              <CardFooter className="flex flex-col items-center gap-2 p-4 md:p-6">
+                <h3 className="text-base md:text-xl font-semibold text-center">{product.name}</h3>
+                <div className="flex items-center gap-2 md:gap-3">
                   {product.originalPrice && (
-                    <p className="text-xl text-muted-foreground line-through">{product.originalPrice}</p>
+                    <p className="text-sm md:text-xl text-muted-foreground line-through">{product.originalPrice}</p>
                   )}
-                  <p className="text-2xl font-bold text-primary">{product.price}</p>
+                  <p className="text-lg md:text-2xl font-bold text-primary">{product.price}</p>
                 </div>
               </CardFooter>
             </Card>
