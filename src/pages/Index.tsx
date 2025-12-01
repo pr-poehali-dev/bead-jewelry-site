@@ -978,11 +978,7 @@ const Index = () => {
                 <p className="text-center text-muted-foreground italic">
                   Политика обработки персональных данных
                 </p>
-        <DialogContent className="max-w-3xl max-h-[80vh] overflow-y-auto">
-          <DialogHeader>
-            <DialogTitle>Политика конфиденциальности</DialogTitle>
-          </DialogHeader>
-          <div className="space-y-4 text-sm">
+
             <section>
               <h3 className="font-semibold mb-2">1. Общие положения</h3>
               <p className="text-muted-foreground">
@@ -1061,10 +1057,10 @@ const Index = () => {
                 <p>7.2. В данном документе будут отражены любые изменения политики обработки персональных данных Оператором. Политика действует бессрочно до замены ее новой версией.</p>
               </div>
             </section>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-    </div>
       ) : null}
 
       <footer className="bg-muted py-12 mt-20">
