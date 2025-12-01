@@ -955,21 +955,29 @@ const Index = () => {
         <main>{renderContent()}</main>
       )}
 
-      <footer className="bg-muted py-12 mt-20">
-        <div className="max-w-6xl mx-auto px-4 text-center space-y-4">
-          <p className="text-muted-foreground text-lg">
-            Украшения ручной работы с любовью ✨
-          </p>
-          <button
-            onClick={() => setShowPrivacyPolicy(true)}
-            className="text-sm text-muted-foreground hover:text-foreground underline transition-colors"
-          >
-            Политика конфиденциальности
-          </button>
-        </div>
-      </footer>
+      {showPrivacyPolicy ? (
+        <div className="fixed inset-0 z-50 bg-background overflow-y-auto">
+          <div className="min-h-screen">
+            <div className="sticky top-0 z-10 bg-background/95 backdrop-blur-sm border-b">
+              <div className="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
+                <Button
+                  variant="ghost"
+                  size="icon"
+                  onClick={() => setShowPrivacyPolicy(false)}
+                  className="rounded-full"
+                >
+                  <Icon name="ArrowLeft" size={24} />
+                </Button>
+                <h1 className="text-xl font-semibold">Политика конфиденциальности</h1>
+                <div className="w-10" />
+              </div>
+            </div>
 
-      <Dialog open={showPrivacyPolicy} onOpenChange={setShowPrivacyPolicy}>
+            <div className="max-w-4xl mx-auto px-4 py-8">
+              <div className="space-y-6 text-sm">
+                <p className="text-center text-muted-foreground italic">
+                  Политика обработки персональных данных
+                </p>
         <DialogContent className="max-w-3xl max-h-[80vh] overflow-y-auto">
           <DialogHeader>
             <DialogTitle>Политика конфиденциальности</DialogTitle>
@@ -1054,8 +1062,24 @@ const Index = () => {
               </div>
             </section>
           </div>
-        </DialogContent>
-      </Dialog>
+        </div>
+      </div>
+    </div>
+      ) : null}
+
+      <footer className="bg-muted py-12 mt-20">
+        <div className="max-w-6xl mx-auto px-4 text-center space-y-4">
+          <p className="text-muted-foreground text-lg">
+            Украшения ручной работы с любовью ✨
+          </p>
+          <button
+            onClick={() => setShowPrivacyPolicy(true)}
+            className="text-sm text-muted-foreground hover:text-foreground underline transition-colors"
+          >
+            Политика конфиденциальности
+          </button>
+        </div>
+      </footer>
     </div>
   );
 };
